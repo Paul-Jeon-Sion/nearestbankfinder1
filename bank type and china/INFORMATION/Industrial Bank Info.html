@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Nearest Bank Finder</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="bank img.png" >
+
+    </head>
+    <body>
+<div class="wrapper">
+    <div class="header">
+        <div class="top">
+            <div class="logo">
+                <img src="nearest bank finder.png" alt="bank finder" style="width: 300px;">
+            </div>
+            <b>Industrial Bank (兴业银行)</b>
+            <span id="textDiv">+86 769 2301 0731</span><br>
+            <button id="copyBtn">Copy Tellphone Number</button>
+            <script>
+                var copyBtn = document.getElementById("copyBtn");
+      
+                copyBtn.addEventListener("click", function(){
+  
+                    var text = document.getElementById("textDiv").innerText;
+
+                    var createInput = document.createElement("input");
+                    createInput.setAttribute("type", "text");
+
+                    document.getElementById("textDiv").appendChild(createInput);
+
+                    createInput.value = text;
+
+                    createInput.select();
+                    document.execCommand('copy');
+
+                    document.getElementById("textDiv").removeChild(createInput);
+                    alert('Copy Successed.');
+                });
+            </script>
+            <div> <button onclick="document.location.href='tel:+86 769 2301 0731'"> <a href="tel:+86 769 2301 0731 ">CALL Industrial Bank</a> </div>
+
+                </body>
+                </html>

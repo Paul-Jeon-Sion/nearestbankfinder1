@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Nearest Bank Finder</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="bank img.png" >
+    </head>
+    <body>
+<div class="wrapper">
+    <div class="header">
+        <div class="top">
+            <div class="logo">
+                <img src="../nearest bank finder.png" alt="bank finder" style="width: 300px;">
+            </div>
+            <b>Shanghai Pudong Development Bank (上海浦东发展银行)</b>
+            <span id="textDiv">+86 769 2286 8080</span><br>
+            <button id="copyBtn">Copy Tellphone Number</button>
+            <script>
+                var copyBtn = document.getElementById("copyBtn");
+      
+                copyBtn.addEventListener("click", function(){
+  
+                    var text = document.getElementById("textDiv").innerText;
+
+                    var createInput = document.createElement("input");
+                    createInput.setAttribute("type", "text");
+
+                    document.getElementById("textDiv").appendChild(createInput);
+
+                    createInput.value = text;
+
+                    createInput.select();
+                    document.execCommand('copy');
+
+                    document.getElementById("textDiv").removeChild(createInput);
+                    alert('Copy Successed.');
+                });
+            </script>
+            <div> <button onclick="document.location.href='tel:+86 769 2286 8080'"> <a href="tel:+86 769 2286 8080 ">CALL Shanghai Pudong Development Bank</a> </div>
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58748.48228565681!2d113.74259297975817!3d23.031843375160374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x189e4f67b534e367!2sShanghai%20Pudong%20Development%20Bank!5e0!3m2!1sko!2s!4v1615373630107!5m2!1sko!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><br><br>
+            <b>Shanghai Pudong Development Bank (上海浦东发展银行) ATM </b><br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4211.905250228924!2d113.74722311523219!3d23.024692937734038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x698581b4fc330c1d!2sShanghai%20Pudong%20Development%20Bank%2024-hour%20Self-service%20Bank!5e0!3m2!1sko!2s!4v1615373665497!5m2!1sko!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <br>
+        <br>
+        <div class="form">
+            <div class="input_field">
+                <div class="btn"><a href="../index.html" ><b>HOME</b></a> </div>
+                </div>
+        </body>
+        </html>
